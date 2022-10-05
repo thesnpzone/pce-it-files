@@ -1,15 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-const cors = require("cors")
-
-app.use(cors({
-    origin: "*" // For Adding localhost just add :=> && "http://localhost:${port here}"
-
-}))
+app.use(cors());
 
 
 
