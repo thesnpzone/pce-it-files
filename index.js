@@ -4,7 +4,12 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-app.use(cors());
+const cors = require("cors")
+
+app.use(cors({
+    origin: "*" // For Adding localhost just add :=> && "http://localhost:${port here}"
+
+}))
 
 
 
